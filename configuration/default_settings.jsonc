@@ -1,0 +1,7 @@
+{
+  // Your LocalStack Auth Token: https://app.localstack.cloud/workspace/auth-tokens
+  "localstack_auth_token": "YOUR_LOCALSTACK_AUTH_TOKEN",
+  // Optional environment variables passed to the MCP server and LocalStack.
+  // Example: { "LOCALSTACK_IMAGE_NAME": "localstack/localstack-pro:latest", "DEBUG": "1" }
+  "env": {}
+}

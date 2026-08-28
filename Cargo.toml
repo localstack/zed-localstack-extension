@@ -1,0 +1,15 @@
+[package]
+name = "mcp_server_localstack"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "Apache-2.0"
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+schemars = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+zed_extension_api = "0.7.0"

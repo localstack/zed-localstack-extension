@@ -1,0 +1,19 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  publish:
+    name: Open update PR against zed-industries/extensions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: huacnlee/zed-extension-action@v1
+        with:
+          extension-name: mcp-server-localstack
+          push-to: localstack/zed-extensions
+        env:
+          # Personal access token with "repo" and "workflow" scopes on the fork.
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
