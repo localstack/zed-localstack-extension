@@ -1,0 +1,10 @@
+id = "mcp-server-localstack"
+name = "LocalStack MCP Server"
+description = "Start, deploy to, and debug LocalStack from Zed's Agent Panel through the LocalStack MCP server"
+version = "0.1.0"
+schema_version = 1
+authors = ["LocalStack <info@localstack.cloud>"]
+repository = "https://github.com/localstack/zed-localstack-extension"
+
+[context_servers.mcp-server-localstack]
+name = "LocalStack MCP Server"
